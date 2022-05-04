@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginBottom="8dp"
+    app:contentPadding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/uPictureIv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_face_custom" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/uNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/pTimeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 min"/>
+
+            </LinearLayout>
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/moreBtn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@null"-->
+<!--                android:src="@drawable/ic_more_black"/>-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pTitleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
+            android:text="Judul"
+            android:autoLink="all"/>
+
+        <TextView
+            android:id="@+id/pDescriptionTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Deskripsi disini"
+            android:layout_marginTop="8dp"
+            android:autoLink="all"/>
+        <ImageView
+            android:id="@+id/pImageIvPost"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="170dp"
+            android:background="@android:color/white"/>
+
+        <!--        <TextView-->
+        <!--            android:text="Harga:"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textColor="@android:color/black"-->
+        <!--            android:autoLink="all"/>-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/pPriceTv"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textColor="@android:color/black"-->
+        <!--            android:text="Harga disini"-->
+        <!--            android:layout_marginBottom="5dp"-->
+        <!--            android:autoLink="all"/>-->
+
+        <TextView
+            android:text="Alamat:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp"
+            android:autoLink="all"/>
+        <TextView
+            android:id="@+id/pAddressTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp"
+            android:text="Alamat disini"
+            android:layout_marginBottom="5dp"
+            android:autoLink="all"/>
+        <!--        <TextView-->
+        <!--            android:text="Kecamatan:"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textColor="@android:color/black"-->
+        <!--            android:autoLink="all"/>-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/pkecamatanTv"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textColor="@android:color/black"-->
+        <!--            android:text="kecamatan disini"-->
+        <!--            android:layout_marginBottom="5dp"-->
+        <!--            android:autoLink="all"/>-->
+        <!--        <TextView-->
+        <!--            android:text="Kota/Kab:"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textColor="@android:color/black"-->
+        <!--            android:autoLink="all"/>-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/pKotaKabTv"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textColor="@android:color/black"-->
+        <!--            android:text="kota atau kab disini"-->
+        <!--            android:layout_marginBottom="5dp"-->
+        <!--            android:autoLink="all"/>-->
+
+        <!--
+                <TextView
+                    android:id="@+id/pLikesTv"
+                    android:text="20k Likes"
+                    android:textColor="@color/colorPrimary2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        -->
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#F5F0F0"/>
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:gravity="center">-->
+        <!--            <Button-->
+        <!--                android:id="@+id/likeBtn"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:drawableStart="@drawable/ic_like_black"-->
+        <!--                android:drawableLeft="@drawable/ic_like_black"-->
+        <!--                android:drawablePadding="5dp"-->
+        <!--                android:background="@android:color/white"-->
+        <!--                android:text="LIKE"/>-->
+        <!--            <Button-->
+        <!--                android:id="@+id/commentBtn"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:drawableLeft="@drawable/ic_comment_black"-->
+        <!--                android:drawableStart="@drawable/ic_comment_black"-->
+        <!--                android:drawablePadding="5dp"-->
+        <!--                android:background="@android:color/white"-->
+        <!--                android:text="COMMENT"/>-->
+
+        <!--        </LinearLayout>-->
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
